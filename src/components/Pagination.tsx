@@ -81,7 +81,7 @@ const getVisiblePages = (): (number | string)[] => {
             onClick={() => typeof page === "number" && onPageChange(page)}
             disabled={typeof page === "string"}
             aria-current={page === currentPage ? "page" : undefined}
-            className={`w-10 h-10 flex items-center justify-center rounded-lg text-sm text-gray-600 font-medium ${
+            className={`w-10 h-10 flex items-center justify-center rounded-lg text-sm text-gray-400 font-medium ${
               page === currentPage
                 ? "bg-primary "
                 : "bg-secondary  hover:bg-muted"
